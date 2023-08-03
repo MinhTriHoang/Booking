@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Connection URL
-const url = 'mongodb://localhost/hehe';
+const url = process.env.MONGODB_URI || 'mongodb+srv://hoang45:<minhtri123234>@cluster0.npmzojg.mongodb.net/?retryWrites=true&w=majority';
 const corsOptions = {
   origin: 'http://localhost:3000', // Replace with your React app's URL
 };
