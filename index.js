@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
-const pathToBuild = path.join(__dirname, '../my-app/src');
+const pathToBuild = path.join(__dirname, '../my-app/public');
 app.use(express.static(pathToBuild));
 
 // Connection URL
